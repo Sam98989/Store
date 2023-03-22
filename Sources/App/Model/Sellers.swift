@@ -36,13 +36,13 @@ final class Seller: Model, Content{
     
     @Field(key: "logo")
     var logo: String
-    
-//    @Field(key: "Countryofresidence")
-//    var Countryofresidence: String
+//    @Children(for: \.$seller)
+//    var products: [Product]
+
     
     init(){}
     
-    init(id: UUID? , name: String, phoneNumber: String, numberOfProducts: Int, location: String ,  sector: String,  companyName: String, logo: String){
+    init(id: UUID? = nil, name: String, phoneNumber: String, numberOfProducts: Int, location: String ,  sector: String,  companyName: String, logo: String){
         self.id = id
         self.name = name
         self.phoneNumber = phoneNumber

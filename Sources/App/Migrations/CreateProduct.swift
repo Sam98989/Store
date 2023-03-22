@@ -15,13 +15,13 @@ struct CreateProduct: Migration{
 //            .field("sellerId", .uuid)
             .field("pname", .string)
             
-//            .field("type", .string)
+            .field("type", .string)
             .field("description", .string)
             .field("price", .double)
-//            .field("image", .string)
-//            .field("quantity", .int)
-//            .field("status", .string)
-//            .field("rating", .double)
+            .field("image", .string)
+            .field("quantity", .int)
+            .field("status", .string)
+            .field("rating", .double)
             .create()
         
     }

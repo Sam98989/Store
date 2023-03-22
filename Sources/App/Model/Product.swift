@@ -22,8 +22,8 @@ final class Product: Model, Content{
     @Field(key: "pname")
     var pname: String
     
-//    @Field(key: "type")
-//    var type: String?
+    @Field(key: "type")
+    var type: String?
 
     @Field(key: "description")
     var description: String
@@ -31,34 +31,38 @@ final class Product: Model, Content{
     @Field(key: "price")
     var price: Double
 
-//    @Field(key: "image")
-//    var image: String?
+    @Field(key: "image")
+    var image: String
+
+    @Field(key: "quantity")
+    var quantity: Int
+
+    @Field(key: "status")
+    var status: String
+
+    @Field(key: "rating")
+    var rating: Double
 //
-//    @Field(key: "quantity")
-//    var quantity: Int?
 //
-//    @Field(key: "status")
-//    var status: String?
-//
-//    @Field(key: "rating")
-//    var rating: Double?
-//
-//
+  
+//    // One-to-many relationship
+//    @Parent(key: "sellerId")
+//    var seller: Seller
     
     init(){}
     
-    init(id: UUID? , pname: String, description: String, price: Double)
+    init(id: UUID? , pname: String, description: String, price: Double,type:String,image:String,quantity:Int,status:String,rating:Double)
     {
         self.id = id
-//        self.sellerId = sellerId
+       // self.sellerId = sellerId
         self.pname = pname
-//        self.type = type
+        self.type = type
         self.description = description
         self.price = price
-//        self.image = image
-//        self.quantity = quantity
-//        self.status = status
-//        self.rating = rating
+        self.image = image
+        self.quantity = quantity
+        self.status = status
+        self.rating = rating
         
     }
 }
