@@ -23,16 +23,16 @@ An API that allows people store, get, create, update and delete sellers and prod
 - Get sellers information using specific id
 - Sellers and products List CRUD:
 # To create:
-http://127.0.0.1:8080/Product
-http://127.0.0.1:8080/seller
-To read:
-http://127.0.0.1:8080/Product
-http://127.0.0.1:8080/seller
+- http://127.0.0.1:8080/Product
+- http://127.0.0.1:8080/seller
+# To read:
+- http://127.0.0.1:8080/Product
+- http://127.0.0.1:8080/seller
 # To update :
-http://127.0.0.1:8080/Product/id
-http://127.0.0.1:8080/seller/id
+- http://127.0.0.1:8080/Product/id
+- http://127.0.0.1:8080/seller/id
 # To delete :
-http://127.0.0.1:8080/Product/id
-http://127.0.0.1:8080/seller/id
+- http://127.0.0.1:8080/Product/id
+- http://127.0.0.1:8080/seller/id
 
 
